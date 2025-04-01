@@ -1,0 +1,6 @@
+mkdir devconnect && cd devconnect
+go mod init devconnect
+go get -u github.com/gin-gonic/gin
+go get -u github.com/golang-jwt/jwt/v5
+go get -u github.com/jmoiron/sqlx
+go get -u github.com/lib/pq

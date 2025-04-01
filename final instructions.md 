@@ -1,0 +1,17 @@
+CREATE DATABASE devconnect;
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50),
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password TEXT NOT NULL
+);
+
+
+
+//Run the Server
+go run main.go
+
+test points:
+Register: POST http://localhost:8080/register
+
+Login: POST http://localhost:8080/login
